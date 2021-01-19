@@ -30,62 +30,81 @@ public class LogInGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
         username = new javax.swing.JTextField();
         jLabel18 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         password = new javax.swing.JPasswordField();
-        shto = new javax.swing.JButton();
-        shto1 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        username.setBackground(new java.awt.Color(255, 255, 255));
+        username.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         username.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usernameActionPerformed(evt);
             }
         });
-        getContentPane().add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 70, 190, 30));
+        jPanel1.add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 290, 280, 40));
 
-        jLabel18.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jLabel18.setText("Username:");
-        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 170, 30));
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 260, 120, -1));
 
-        jLabel17.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jLabel17.setText("Password:");
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 110, 170, 30));
-        getContentPane().add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 110, 190, 30));
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 340, 100, 20));
 
-        shto.setBackground(new java.awt.Color(51, 51, 51));
-        shto.setFont(new java.awt.Font("Century Gothic", 1, 13)); // NOI18N
-        shto.setForeground(new java.awt.Color(255, 255, 0));
-        shto.setText("LOG IN");
-        shto.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        shto.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        shto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                shtoActionPerformed(evt);
-            }
-        });
-        getContentPane().add(shto, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 170, 100, 30));
-
-        shto1.setBackground(new java.awt.Color(51, 51, 51));
-        shto1.setFont(new java.awt.Font("Century Gothic", 1, 13)); // NOI18N
-        shto1.setForeground(new java.awt.Color(255, 255, 0));
-        shto1.setText("SIGN UP");
-        shto1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        shto1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        shto1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                shto1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(shto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 200, 100, 30));
+        password.setBackground(new java.awt.Color(255, 255, 255));
+        password.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 360, 280, 40));
 
         jLabel7.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
         jLabel7.setText("Log In as Admin");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 10, 160, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 180, 220, 50));
+
+        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel1.setText("Welcome back to Cursar");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, -1, -1));
+
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon("D:\\UBT\\dizajnSoftuerik\\Group 10279.png")); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jLabel3.setBackground(new java.awt.Color(255, 204, 0));
+        jLabel3.setForeground(new java.awt.Color(255, 204, 0));
+        jLabel3.setText("<html>\n<body>\n<p><u>Don't have an account? <br>Register now</u>!</p>\n</body>\n</head>");
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 420, -1, -1));
+
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setIcon(new javax.swing.ImageIcon("D:\\UBT\\dizajnSoftuerik\\Group 10134.png")); // NOI18N
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 420, -1, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 930, 600));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -94,9 +113,14 @@ public class LogInGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_usernameActionPerformed
 
-    private void shtoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_shtoActionPerformed
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+       AddUsersGUI a = new AddUsersGUI();
+        a.setVisible(true);
+    }//GEN-LAST:event_jLabel3MouseClicked
+
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         if(username.getText() == " " || username.getText().trim().equals("")){
-            JOptionPane.showMessageDialog(this, "Nuk keni shtypur username!");
+            JOptionPane.showMessageDialog(this,"Nuk keni shtypur username!", "Error", JOptionPane.ERROR_MESSAGE);
         }
         else if(password.getText() == " " || password.getText().trim().equals("")){
             JOptionPane.showMessageDialog(this, "Nuk keni shtypur password!");
@@ -116,31 +140,9 @@ public class LogInGUI extends javax.swing.JFrame {
                     }
                 }
             } catch (CrudFormException ex) {
-                JOptionPane.showMessageDialog(this, "Username apo password jane shtypur gabim! ");
-                //else if (username.getText().equals("user"))
-
-                //JOptionPane.showMessageDialog(this, "p.s. Nuk keni te drejte te qaseni ne Admin Mode nese jeni user!");
-                //JOptionPane.showMessageDialog(this, ex.getMessage());
+                JOptionPane.showMessageDialog(this,"ERROR", "Username apo password jane shtypur gabim! ", JOptionPane.ERROR_MESSAGE);
             }
-            /*String user = username.getText();
-            String pass = password.getText();
-
-            if (user.equals("Admin") && pass.equals("123")) {
-                AdminModeGUI a = new AdminModeGUI();
-                a.setVisible(true);
-            } else {
-
-                JOptionPane.showMessageDialog(this,"Username apo password jane shtypur gabim! ");
-                JOptionPane.showMessageDialog(this,"p.s. nuk mund te kyceni nese nuk jeni Administrator! ");
-            }*/
-
-    }//GEN-LAST:event_shtoActionPerformed
-
-    private void shto1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_shto1ActionPerformed
-        AddUsersGUI a = new AddUsersGUI();
-        a.setVisible(true);
-
-    }//GEN-LAST:event_shto1ActionPerformed
+    }//GEN-LAST:event_jLabel4MouseClicked
 
     /**
      * @param args the command line arguments
@@ -153,7 +155,7 @@ public class LogInGUI extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Dark Metal".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -178,12 +180,15 @@ public class LogInGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField password;
-    private javax.swing.JButton shto;
-    private javax.swing.JButton shto1;
     private javax.swing.JTextField username;
     // End of variables declaration//GEN-END:variables
 }

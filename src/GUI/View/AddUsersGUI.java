@@ -101,29 +101,29 @@ public class AddUsersGUI extends javax.swing.JFrame {
                 usernameActionPerformed(evt);
             }
         });
-        getContentPane().add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, 220, 30));
+        getContentPane().add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 170, 220, 30));
 
         jLabel16.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel16.setText("Username:");
-        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, 170, 30));
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 170, 170, 30));
 
         pasi.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pasiActionPerformed(evt);
             }
         });
-        getContentPane().add(pasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 100, 220, 30));
+        getContentPane().add(pasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 210, 220, 30));
 
         jLabel19.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel19.setText("Password:");
-        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 100, 170, 30));
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 210, 170, 30));
 
         jLabel20.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel20.setText("Roli:");
-        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 170, 30));
+        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 250, 170, 30));
 
-        RoliCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        getContentPane().add(RoliCombo, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 140, 220, 30));
+        RoliCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Admin", "Profesor", "Student" }));
+        getContentPane().add(RoliCombo, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 250, 220, 30));
 
         shto.setBackground(new java.awt.Color(51, 51, 51));
         shto.setFont(new java.awt.Font("Century Gothic", 1, 13)); // NOI18N
@@ -136,7 +136,7 @@ public class AddUsersGUI extends javax.swing.JFrame {
                 shtoActionPerformed(evt);
             }
         });
-        getContentPane().add(shto, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, 100, 30));
+        getContentPane().add(shto, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 300, 100, 30));
 
         anulo.setBackground(new java.awt.Color(51, 51, 51));
         anulo.setFont(new java.awt.Font("Century Gothic", 1, 13)); // NOI18N
@@ -149,7 +149,7 @@ public class AddUsersGUI extends javax.swing.JFrame {
                 anuloActionPerformed(evt);
             }
         });
-        getContentPane().add(anulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 190, 100, 30));
+        getContentPane().add(anulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 300, 100, 30));
 
         fshij.setBackground(new java.awt.Color(51, 51, 51));
         fshij.setFont(new java.awt.Font("Century Gothic", 1, 13)); // NOI18N
@@ -162,7 +162,7 @@ public class AddUsersGUI extends javax.swing.JFrame {
                 fshijActionPerformed(evt);
             }
         });
-        getContentPane().add(fshij, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 190, 100, 30));
+        getContentPane().add(fshij, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 300, 100, 30));
 
         table.setBackground(new java.awt.Color(51, 51, 51));
         table.setFont(new java.awt.Font("Century Gothic", 1, 11)); // NOI18N
@@ -180,11 +180,11 @@ public class AddUsersGUI extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(table);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 240, 520, 150));
+        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 350, 520, 150));
 
         jLabel7.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
         jLabel7.setText("Shto përdorues të rinjë");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 260, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 120, 260, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
