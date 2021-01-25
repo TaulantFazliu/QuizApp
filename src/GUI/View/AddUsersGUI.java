@@ -80,89 +80,61 @@ public class AddUsersGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        username = new javax.swing.JTextField();
-        jLabel16 = new javax.swing.JLabel();
-        pasi = new javax.swing.JTextField();
-        jLabel19 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         RoliCombo = new javax.swing.JComboBox();
-        shto = new javax.swing.JButton();
-        anulo = new javax.swing.JButton();
-        fshij = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         table = new javax.swing.JTable();
-        jLabel7 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        pasi = new javax.swing.JPasswordField();
+        jLabel21 = new javax.swing.JLabel();
+        username = new javax.swing.JTextField();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        username.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                usernameActionPerformed(evt);
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Fshij.png"))); // NOI18N
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
             }
         });
-        getContentPane().add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 170, 220, 30));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 420, -1, -1));
 
-        jLabel16.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel16.setText("Username:");
-        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 170, 170, 30));
-
-        pasi.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pasiActionPerformed(evt);
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Anulo.png"))); // NOI18N
+        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel3MouseClicked(evt);
             }
         });
-        getContentPane().add(pasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 210, 220, 30));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 420, -1, -1));
 
-        jLabel19.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel19.setText("Password:");
-        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 210, 170, 30));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Shto.png"))); // NOI18N
+        jLabel1.setMaximumSize(new java.awt.Dimension(100, 20));
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 420, -1, -1));
 
-        jLabel20.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel20.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jLabel20.setText("Roli:");
-        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 250, 170, 30));
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 380, 170, 30));
 
-        RoliCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Admin", "Profesor", "Student" }));
-        getContentPane().add(RoliCombo, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 250, 220, 30));
-
-        shto.setBackground(new java.awt.Color(51, 51, 51));
-        shto.setFont(new java.awt.Font("Century Gothic", 1, 13)); // NOI18N
-        shto.setForeground(new java.awt.Color(255, 255, 0));
-        shto.setText("Shto");
-        shto.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        shto.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        shto.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                shtoActionPerformed(evt);
-            }
-        });
-        getContentPane().add(shto, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 300, 100, 30));
-
-        anulo.setBackground(new java.awt.Color(51, 51, 51));
-        anulo.setFont(new java.awt.Font("Century Gothic", 1, 13)); // NOI18N
-        anulo.setForeground(new java.awt.Color(255, 255, 0));
-        anulo.setText("Anulo");
-        anulo.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        anulo.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        anulo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                anuloActionPerformed(evt);
-            }
-        });
-        getContentPane().add(anulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 300, 100, 30));
-
-        fshij.setBackground(new java.awt.Color(51, 51, 51));
-        fshij.setFont(new java.awt.Font("Century Gothic", 1, 13)); // NOI18N
-        fshij.setForeground(new java.awt.Color(255, 255, 0));
-        fshij.setText("Fshij");
-        fshij.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        fshij.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        fshij.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fshijActionPerformed(evt);
-            }
-        });
-        getContentPane().add(fshij, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 300, 100, 30));
+        RoliCombo.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel1.add(RoliCombo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 410, 280, 30));
 
         table.setBackground(new java.awt.Color(51, 51, 51));
         table.setFont(new java.awt.Font("Century Gothic", 1, 11)); // NOI18N
@@ -180,18 +152,39 @@ public class AddUsersGUI extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(table);
 
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 350, 520, 150));
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 240, 430, 150));
 
-        jLabel7.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
-        jLabel7.setText("Shto përdorues të rinjë");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 120, 260, -1));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Group 10282.png"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 0, -1, -1));
+
+        pasi.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(pasi, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 280, 40));
+
+        jLabel21.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel21.setText("Password:");
+        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 100, 20));
+
+        username.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        username.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                usernameActionPerformed(evt);
+            }
+        });
+        jPanel1.add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 280, 40));
+
+        jLabel22.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel22.setText("Username:");
+        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 120, -1));
+
+        jLabel8.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
+        jLabel8.setText("Shto përdorues të rinjë");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, 220, 50));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 890, 610));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void usernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_usernameActionPerformed
     public void clear(){
                             table.clearSelection();
                             username.setText("");
@@ -201,11 +194,11 @@ public class AddUsersGUI extends javax.swing.JFrame {
         
 
                         }
-    private void pasiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pasiActionPerformed
+    private void usernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_pasiActionPerformed
+    }//GEN-LAST:event_usernameActionPerformed
 
-    private void shtoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_shtoActionPerformed
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         if(username.getText() == " " || username.getText().trim().equals("")){
             JOptionPane.showMessageDialog(this, "Nuk keni shtypur username!");
         }
@@ -237,13 +230,13 @@ public class AddUsersGUI extends javax.swing.JFrame {
         }catch(CrudFormException ex){
             JOptionPane.showMessageDialog(this, "E dhena ekziston!");
         }
-    }//GEN-LAST:event_shtoActionPerformed
+    }//GEN-LAST:event_jLabel1MouseClicked
 
-    private void anuloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_anuloActionPerformed
-        clear();
-    }//GEN-LAST:event_anuloActionPerformed
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+       clear();
+    }//GEN-LAST:event_jLabel3MouseClicked
 
-    private void fshijActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fshijActionPerformed
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         int row = table.getSelectedRow();
         if(row != -1){
             Object[] ob = {"Po","Jo"};
@@ -263,7 +256,7 @@ public class AddUsersGUI extends javax.swing.JFrame {
         }else{
             JOptionPane.showMessageDialog(this, "Nuk keni selektuar asgje per te fshire!");
         }
-    }//GEN-LAST:event_fshijActionPerformed
+    }//GEN-LAST:event_jLabel4MouseClicked
 
     /**
      * @param args the command line arguments
@@ -302,15 +295,17 @@ public class AddUsersGUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox RoliCombo;
-    private javax.swing.JButton anulo;
-    private javax.swing.JButton fshij;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextField pasi;
-    private javax.swing.JButton shto;
+    private javax.swing.JPasswordField pasi;
     private javax.swing.JTable table;
     private javax.swing.JTextField username;
     // End of variables declaration//GEN-END:variables

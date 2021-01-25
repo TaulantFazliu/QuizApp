@@ -3,7 +3,6 @@
   <persistence-unit name="QuizAppPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>BLL.Perdoruesi</class>
-    <class>BLL.Quiz1</class>
     <class>BLL.Roli</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=CRUD"/>

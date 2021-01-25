@@ -16,8 +16,10 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.ListSelectionModel;
+import javax.swing.RowFilter;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+import javax.swing.table.TableRowSorter;
 
 /**
  *
@@ -35,6 +37,7 @@ public class UsersAndAdminsTable extends javax.swing.JFrame {
         loadTable();
         tabelaSelectedIndexChange();
         setLocationRelativeTo(null);
+        table.setAutoCreateRowSorter(true);
     }
  public void loadTable(){
         try{
@@ -76,11 +79,54 @@ public class UsersAndAdminsTable extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        filterField = new javax.swing.JTextField();
+        fshij = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         table = new javax.swing.JTable();
-        fshij = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Filter users");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 110, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Lista e users");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, -1, -1));
+
+        filterField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                filterFieldActionPerformed(evt);
+            }
+        });
+        filterField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                filterFieldKeyReleased(evt);
+            }
+        });
+        jPanel1.add(filterField, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 120, 30));
+
+        fshij.setBackground(new java.awt.Color(51, 51, 51));
+        fshij.setFont(new java.awt.Font("Century Gothic", 1, 13)); // NOI18N
+        fshij.setForeground(new java.awt.Color(255, 255, 0));
+        fshij.setText("Fshij");
+        fshij.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        fshij.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        fshij.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fshijActionPerformed(evt);
+            }
+        });
+        jPanel1.add(fshij, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 100, 30));
 
         table.setBackground(new java.awt.Color(51, 51, 51));
         table.setFont(new java.awt.Font("Century Gothic", 1, 11)); // NOI18N
@@ -98,40 +144,13 @@ public class UsersAndAdminsTable extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(table);
 
-        fshij.setBackground(new java.awt.Color(51, 51, 51));
-        fshij.setFont(new java.awt.Font("Century Gothic", 1, 13)); // NOI18N
-        fshij.setForeground(new java.awt.Color(255, 255, 0));
-        fshij.setText("Fshij");
-        fshij.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        fshij.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        fshij.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                fshijActionPerformed(evt);
-            }
-        });
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, 520, 150));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(fshij, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(253, 253, 253))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 520, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(45, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(fshij, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(47, Short.MAX_VALUE))
-        );
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bg.png"))); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 360));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-1, 1, 640, 360));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -164,6 +183,22 @@ public void clear(){
         }
     }//GEN-LAST:event_fshijActionPerformed
 
+    private void filterFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_filterFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_filterFieldActionPerformed
+
+    private void filterFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_filterFieldKeyReleased
+        String query = filterField.getText();
+        filter(query);
+    }//GEN-LAST:event_filterFieldKeyReleased
+ private void filter(String query){
+         PerdoruesiTableModel df;
+            df = (PerdoruesiTableModel)table.getModel();
+
+     TableRowSorter<PerdoruesiTableModel> tr = new TableRowSorter<PerdoruesiTableModel>(df);
+     table.setRowSorter(tr);
+     tr.setRowFilter(RowFilter.regexFilter(query));
+     }
     /**
      * @param args the command line arguments
      */
@@ -200,7 +235,12 @@ public void clear(){
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField filterField;
     private javax.swing.JButton fshij;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable table;
     // End of variables declaration//GEN-END:variables

@@ -31,59 +31,51 @@ public class LogInGUI extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        username = new javax.swing.JTextField();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        password = new javax.swing.JPasswordField();
-        jLabel7 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        username = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        password = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        username.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/8972dcea-b867-4eed-a74a-4c8a55789f3c.png"))); // NOI18N
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 440, -1, -1));
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/0f45cb1c-a23e-42e6-afd0-f958bef72741.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
         username.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         username.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usernameActionPerformed(evt);
             }
         });
-        jPanel1.add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 290, 280, 40));
+        jPanel1.add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 290, 280, 40));
 
-        jLabel18.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jLabel18.setText("Username:");
-        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 260, 120, -1));
+        jLabel8.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
+        jLabel8.setText("Log In as Admin");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 180, 220, 50));
 
-        jLabel17.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jLabel17.setText("Password:");
-        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 340, 100, 20));
-
-        password.setBackground(new java.awt.Color(255, 255, 255));
-        password.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 360, 280, 40));
-
-        jLabel7.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
-        jLabel7.setText("Log In as Admin");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 180, 220, 50));
-
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel1.setText("Welcome back to Cursar");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, -1, -1));
-
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon("D:\\UBT\\dizajnSoftuerik\\Group 10279.png")); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jLabel2.setText("Welcome back to Cursar");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, -1, -1));
 
         jLabel3.setBackground(new java.awt.Color(255, 204, 0));
         jLabel3.setForeground(new java.awt.Color(255, 204, 0));
@@ -93,18 +85,20 @@ public class LogInGUI extends javax.swing.JFrame {
                 jLabel3MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 420, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 440, -1, -1));
 
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon("D:\\UBT\\dizajnSoftuerik\\Group 10134.png")); // NOI18N
-        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel4MouseClicked(evt);
-            }
-        });
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 420, -1, -1));
+        jLabel19.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel19.setText("Password:");
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 340, 100, 20));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 930, 600));
+        jLabel20.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel20.setText("Username:");
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 260, 120, -1));
+
+        password.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, 280, 40));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 850, 610));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -114,16 +108,16 @@ public class LogInGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_usernameActionPerformed
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
-       AddUsersGUI a = new AddUsersGUI();
+         AddUsersGUI a = new AddUsersGUI();
         a.setVisible(true);
     }//GEN-LAST:event_jLabel3MouseClicked
 
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
-        if(username.getText() == " " || username.getText().trim().equals("")){
-            JOptionPane.showMessageDialog(this,"Nuk keni shtypur username!", "Error", JOptionPane.ERROR_MESSAGE);
+if(username.getText() == " " || username.getText().trim().equals("")){
+            JOptionPane.showMessageDialog(this, "Nuk keni shtypur username!", "Error",JOptionPane.ERROR_MESSAGE);
         }
         else if(password.getText() == " " || password.getText().trim().equals("")){
-            JOptionPane.showMessageDialog(this, "Nuk keni shtypur password!");
+            JOptionPane.showMessageDialog(this, "Nuk keni shtypur password!","Error",JOptionPane.ERROR_MESSAGE);
         }
         else
         try {
@@ -136,12 +130,16 @@ public class LogInGUI extends javax.swing.JFrame {
                         a.setVisible(true);
                         this.setVisible(false);
                     } else {
-                        JOptionPane.showMessageDialog(this, "Nuk keni te drejte te qaseni ne Admin Mode nese jeni user!");
+                        JOptionPane.showMessageDialog(this, "Nuk keni te drejte te qaseni ne Admin Mode nese jeni user!","Error",JOptionPane.ERROR_MESSAGE);
                     }
                 }
             } catch (CrudFormException ex) {
-                JOptionPane.showMessageDialog(this,"ERROR", "Username apo password jane shtypur gabim! ", JOptionPane.ERROR_MESSAGE);
-            }
+                JOptionPane.showMessageDialog(this, "Username apo password jane shtypur gabim!","Error",JOptionPane.ERROR_MESSAGE);
+                //else if (username.getText().equals("user"))
+
+                //JOptionPane.showMessageDialog(this, "p.s. Nuk keni te drejte te qaseni ne Admin Mode nese jeni user!");
+                //JOptionPane.showMessageDialog(this, ex.getMessage());
+            }        // TODO add your handling code here:
     }//GEN-LAST:event_jLabel4MouseClicked
 
     /**
@@ -155,7 +153,7 @@ public class LogInGUI extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Dark Metal".equals(info.getName())) {
+                if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -181,12 +179,12 @@ public class LogInGUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField password;
     private javax.swing.JTextField username;

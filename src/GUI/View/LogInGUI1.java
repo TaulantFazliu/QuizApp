@@ -16,6 +16,7 @@ public class LogInGUI1 extends javax.swing.JFrame {
         getContentPane().setBackground(Color.WHITE);
         initComponents();
         setLocationRelativeTo(null);
+        
     }
 
     /**
@@ -28,79 +29,59 @@ public class LogInGUI1 extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        username = new javax.swing.JTextField();
-        jLabel17 = new javax.swing.JLabel();
         password = new javax.swing.JPasswordField();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        username = new javax.swing.JTextField();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMinimumSize(new java.awt.Dimension(500, 230));
+        setMinimumSize(new java.awt.Dimension(810, 615));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setMinimumSize(new java.awt.Dimension(810, 615));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel2.setText("Welcome back to Cursar");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 290, -1, -1));
+        password.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 350, 280, 40));
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\UBT\\dizajnSoftuerik\\Group 10283.png")); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jLabel19.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel19.setText("Password:");
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 330, 100, 20));
 
-        jLabel7.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
-        jLabel7.setText("Log In as User");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 180, 220, 50));
-
-        jLabel18.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jLabel18.setText("Username:");
-        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 260, 120, -1));
-
-        username.setBackground(new java.awt.Color(255, 255, 255));
         username.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         username.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usernameActionPerformed(evt);
             }
         });
-        jPanel1.add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 290, 280, 40));
+        jPanel1.add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 280, 280, 40));
 
-        jLabel17.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jLabel17.setText("Password:");
-        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 340, 100, 20));
+        jLabel20.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel20.setText("Username:");
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 250, 120, -1));
 
-        password.setBackground(new java.awt.Color(255, 255, 255));
-        password.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jPanel1.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 360, 280, 40));
-
-        jLabel3.setBackground(new java.awt.Color(51, 153, 255));
-        jLabel3.setForeground(new java.awt.Color(0, 153, 255));
-        jLabel3.setText("<html>\n<body>\n<p><u>Don't have an account? <br>Register now</u>!</p>\n</body>\n</head>");
-        jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel3MouseClicked(evt);
-            }
-        });
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 420, -1, -1));
+        jLabel8.setFont(new java.awt.Font("Century Gothic", 1, 20)); // NOI18N
+        jLabel8.setText("Log In as Student");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 170, 220, 50));
 
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon("D:\\UBT\\dizajnSoftuerik\\LoginButoniUser.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/79affa63-37b9-4bee-a0a3-d2c5276a87d4.png"))); // NOI18N
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel4MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 420, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 430, -1, -1));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 940, 610));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/bffca580-ee32-4d7a-8f0a-9c224b42bdca.png"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 850, 600));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -109,17 +90,12 @@ public class LogInGUI1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_usernameActionPerformed
 
-    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
-        AddUsersGUI a = new AddUsersGUI();
-        a.setVisible(true);
-    }//GEN-LAST:event_jLabel3MouseClicked
-
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         if(username.getText() == " " || username.getText().trim().equals("")){
-            JOptionPane.showMessageDialog(this, "Nuk keni shtypur username!");
+            JOptionPane.showMessageDialog(this, "Nuk keni shtypur username!", "Error",JOptionPane.ERROR_MESSAGE);
         }
         else if(password.getText() == " " || password.getText().trim().equals("")){
-            JOptionPane.showMessageDialog(this, "Nuk keni shtypur password!");
+            JOptionPane.showMessageDialog(this, "Nuk keni shtypur password!", "Error",JOptionPane.ERROR_MESSAGE);
         }
         else
         try {
@@ -131,9 +107,20 @@ public class LogInGUI1 extends javax.swing.JFrame {
                 this.setVisible(false);
             }
         } catch (CrudFormException ex) {
-            JOptionPane.showMessageDialog(this, "Username apo password jane shtypur gabim!");
+            JOptionPane.showMessageDialog(this, "Username apo password jane shtypur gabim!", "Error",JOptionPane.ERROR_MESSAGE);
             //JOptionPane.showMessageDialog(this, ex.getMessage());
         }
+        /*String user = username.getText();
+        String pass = password.getText();
+
+        if (user.equals("Admin") && pass.equals("123")) {
+            AdminModeGUI a = new AdminModeGUI();
+            a.setVisible(true);
+        } else {
+
+            JOptionPane.showMessageDialog(this,"Username apo password jane shtypur gabim! ");
+            JOptionPane.showMessageDialog(this,"p.s. nuk mund te kyceni nese nuk jeni Administrator! ");
+        }*/
     }//GEN-LAST:event_jLabel4MouseClicked
 
     /**
@@ -173,12 +160,10 @@ public class LogInGUI1 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel19;
+    private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPasswordField password;
     private javax.swing.JTextField username;
